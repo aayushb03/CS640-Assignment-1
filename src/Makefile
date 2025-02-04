@@ -2,7 +2,7 @@
 JAVAC = javac
 
 # Define the source files
-SRCS = Main.java Helper.java
+SRCS = Client.java Server.java
 
 # Define the class files
 CLASSES = Iperfer.class Server.class Client.class
