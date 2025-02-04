@@ -15,8 +15,7 @@ all: $(CLASSES)
 	$(JAVAC) $<
 
 # Rule for running the main Java file
-run: all
-	@java Iperfer
+compile: all
 
 # Rule to clean up the generated class files
 clean:
