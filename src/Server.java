@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
 import java.io.InputStream;
 import java.net.ServerSocket;
->>>>>>> 6631ae3364007be0ce48b9b0c0e14d46f260b235
+
 import java.net.Socket;
 
 public class Server {
@@ -13,10 +11,6 @@ public class Server {
     }
 
     public void start() {
-<<<<<<< HEAD
-
-      
-=======
         System.out.println(this.port);
         try (ServerSocket serverSocket = new ServerSocket(port);
              Socket clientSocket = serverSocket.accept();
@@ -41,6 +35,6 @@ public class Server {
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
->>>>>>> 6631ae3364007be0ce48b9b0c0e14d46f260b235
+
     }
 }
