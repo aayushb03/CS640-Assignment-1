@@ -13,11 +13,15 @@
         switch (args[0]) {
             case "-c": {
                 parseClientArgs(args);
+                Client c = new Client(serverHostname, portNum, time);
+                c.start();
                 break;
             }
 
             case "-s": {
                 parseServerArgs(args);
+                Server s = new Server(portNum);
+                s.start();
                 break;
             }
                 
