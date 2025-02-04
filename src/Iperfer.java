@@ -55,8 +55,6 @@ public class Iperfer {
 
             }
         }
-
-        System.out.println("Server started on port " + portNum);
     }
 
     public static void parseClientArgs(String[] args) {
@@ -94,7 +92,6 @@ public class Iperfer {
             }
 
         }
-        System.out.println("Client started on port " + portNum + " to server " + serverHostname);
     }
 
 
