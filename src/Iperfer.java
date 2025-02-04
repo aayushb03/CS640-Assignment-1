@@ -1,4 +1,4 @@
-public class Iperfer {
+ public class Iperfer {
  
     static int portNum;
     static int time;

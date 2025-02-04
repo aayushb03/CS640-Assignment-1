@@ -2,10 +2,10 @@
 JAVAC = javac
 
 # Define the source files
-SRCS = Main.java Helper.java
+SRCS = Client.java Server.java
 
 # Define the class files
-CLASSES = Iperfer.class 
+CLASSES = Iperfer.class Server.class Client.class
 
 # Define the target to compile all Java files
 all: $(CLASSES)
