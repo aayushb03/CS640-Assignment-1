@@ -16,8 +16,8 @@ public class Server {
              InputStream in = clientSocket.getInputStream()) {
 
             byte[] buffer = new byte[1000];
-            int bytesRead;
-            int totalBytesReceived = 0;
+            long bytesRead;
+            long totalBytesReceived = 0;
             long startTime = System.currentTimeMillis();
 
             while ((bytesRead = in.read(buffer)) != -1) {
@@ -26,10 +26,10 @@ public class Server {
 
             long endTime = System.currentTimeMillis();
             double duration = (endTime - startTime) / 1000.0;
-            double receivedKB = totalBytesReceived / 1000.0;
+            long receivedKB = totalBytesReceived / 1000;
             double receivedMbps = (totalBytesReceived * 8.0) / (duration * 1000000.0);
 
-            System.out.printf("received=%.3f KB rate=%.3f Mbps%n", receivedKB, receivedMbps);
+            System.out.printf("received=%d KB rate=%.3f Mbps%n", receivedKB, receivedMbps);
 
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
