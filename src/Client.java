@@ -1,10 +1,12 @@
 import java.io.OutputStream;
+
 import java.net.Socket;
 
 public class Client {
     private String hostname;
     private int port;
     private int time;
+
 
     public Client(String hostname, int port, int time) {
         this.hostname = hostname;
@@ -16,7 +18,7 @@ public class Client {
         System.out.println(this.hostname);
         System.out.println(this.port);
         System.out.println(this.time);
-
+    
         try (Socket socket = new Socket(hostname, port); OutputStream out = socket.getOutputStream()) {
             byte[] data = new byte[1000];
             long startTime = System.currentTimeMillis();

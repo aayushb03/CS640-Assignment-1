@@ -1,5 +1,6 @@
 import java.io.InputStream;
 import java.net.ServerSocket;
+
 import java.net.Socket;
 
 public class Server {
@@ -34,5 +35,6 @@ public class Server {
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
         }
+
     }
 }
