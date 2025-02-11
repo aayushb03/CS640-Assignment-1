@@ -9,6 +9,14 @@
             System.out.println("Error: missing or additonal arguments");
             System.exit(1);
         }
+        if (args.length == 3 && args[0].equals("-s") && args[1].equals("-p")) {
+            // Args are valid
+        } else if (args.length == 7 && args[0].equals("-c") && args[1].equals("-h") && args[3].equals("-p") && args[5].equals("-t")) {
+            // Args are valid
+        } else {
+            System.out.println("Error: missing or additional arguments");
+        }
+    
 
         switch (args[0]) {
             case "-c": {
